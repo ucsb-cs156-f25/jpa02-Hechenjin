@@ -52,9 +52,10 @@ public class TeamTest {
         team4.addMember("member1");
         assert(!team.equals(team4));
 
-        team.addMember("Jin");
+        team.addMember("Hechenjin");
         Team team5 = new Team("test-team");
-        team5.addMember("Jin");
+
+        team5.addMember("Hechenjin");
         assert(team.equals(team5));
 
     }
@@ -69,6 +70,15 @@ public class TeamTest {
         t2.setName("foo");
         t2.addMember("bar");
         assertEquals(t1.hashCode(), t2.hashCode());
+
+    }
+
+    @Test
+    public void additional_test(){
+        Team t = new Team();
+        int result = t.hashCode();
+        int expectedResult = 1;
+        assertEquals(expectedResult, result);
     }
 
 }
