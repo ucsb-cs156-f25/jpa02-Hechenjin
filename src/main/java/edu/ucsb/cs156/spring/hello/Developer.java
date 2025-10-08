@@ -26,7 +26,7 @@ public class Developer {
      */
 
     public static String getGithubId() {
-        return "Hechenjin Y.";
+        return "Hechenjin";
     }
 
     /**
